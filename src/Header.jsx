@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react"; // ✅ Import useEffect
+import React, { useState, useEffect, useRef } from "react"; // Import useEffect
 import { MdOutlineNightlight, MdNightlightRound } from "react-icons/md";
 import axios from "axios";
 
@@ -79,11 +79,11 @@ el.style.color = daylight ? "#333" : "#f0f0f0";
   onChange={(e) => {
     setRegion(e.target.value);
     if (e.target.value) {
-      getCountryByRegion(e.target.value); // ✅ Call function with selected region
+      getCountryByRegion(e.target.value); // Call function with selected region
     } else {
       getCountry(); // Reset if no region selected
     }
-  }}  style={{color: daylight ? "red" :"black" }}>
+  }}  style={{color: daylight ? "white" :"black" }}>
             <option value="" disabled selected style={{color: daylight ? "black" : "white"}}>Filter by Region</option>
             <option value="africa">Africa</option>
             <option value="americas">America</option>
